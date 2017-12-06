@@ -1,8 +1,9 @@
-## Ethereum Blockchain Intro
+## Ethereum Smart Contracts Intro 
+
 ---
 
 ## Emanuel Mota - @emota7
-CEO - Yari Labs
+Founder of Yari Labs
 
 emanuel@yarilabs.com
 
@@ -34,14 +35,17 @@ Quick questions about the audience
 * changes can only happen via transactions accepted by all others
 +++
 
+### Blockchain Overview
 * transactions are always cryptographically signed
 * transactions are bundled in blocks and chained together 
 
 ![Blockchain](assets/blockchain.png)
+
 ---
 
 ## Bitcoin vs. Ethereum
-+++
+
+---
 
 ### Bitcoin
 * Cryptocurrency (Bitcoin)
@@ -79,8 +83,10 @@ Quick questions about the audience
   payload
 
 ---
+
 ## Smart Contracts 
-+++
+
+---
 
 ### Smart Contracts
 
@@ -89,16 +95,19 @@ Quick questions about the audience
 <div style="text-align: right"> (Vitalik Buterin) </div>
 
 ---
-## What are the implications !?
----
 
+## What are the implications !?
+
+---
 ### Smart Contracts 
 
 Smart contract flow of data 
 ![smart_contract_flow](assets/sc_flow.png)
 
 +++
-### source for this seccion: https://solidity.readthedocs.io/
+
+### source for smart contracts section: https://solidity.readthedocs.io/
+
 +++
 
 ### Smart Contracts 
@@ -118,28 +127,33 @@ Smart contract flow of data
 ### Smart Contracts 
 * Contracts can call other contracts (they can even call themselves)
 * 1024 max call stack depth
-* call (new contexts) vs delegatecall (same context, e.g. same msg.sender +
-msg.value)
+* call (new contexts) vs delegatecall (same context, e.g. msg.sender + msg.value)
 * Events
 * Contracts can purge themselves from the blockchain (OPCODE selfdestruct)
 
 +++
 
 ### Smart Contracts 
-* Contracts are defined through a transaction sent to 0x000.....000
+* Contracts are defined through a transaction sent to 0x000.....000 (zero acc)
 * Data of the transaction is the compiled contract
----
 
-### Solidity Examples 
++++
+
+### Smart Contracts Programming Languages 
 * Available Programming languages 
   * Solidity (Javascript/Java like)
   * Serpent (Python inspired)
   * LLL (Lisp inspired)
-  * some others in the making ...
+  * others in the making ...
 
-+++
+---
 
-### Simple storage demo
+## Solidity Programming Language
+
+---
+
+### Solidity 
+##### Simple storage demo
 
 ```javascript
 pragma solidity ^0.4.0;
@@ -161,7 +175,8 @@ contract SimpleStorage {
 * The history would be preserved on the Blockchain. 
 
 +++
-### Implementing your own coin
+### Solidity 
+##### Implementing your own coin
 
 ```
 pragma solidity ^0.4.0;
@@ -182,7 +197,8 @@ contract Coin {
 ``` 
 +++
 
-### Implementing your own coin
+### Solidity 
+##### Implementing your own coin
 
 ```
 // from previous page ...
@@ -201,7 +217,9 @@ contract Coin {
 }
 ```
 +++
-### The only way for a contract to vanish from the blockchain is self destruction 
+
+### Solidity
+##### stop/remove a contract from blockchain: selfdestruct ! 
 
 ```
 pragma solidity ^0.4.0;
@@ -212,7 +230,6 @@ contract owned {
 }
 
 // a contract can be derived from another contract
-
 contract mortal is owned {
     function kill() {
         if (msg.sender == owner) selfdestruct(owner);
@@ -224,14 +241,17 @@ contract mortal is owned {
 ```
 
 ---
+## Ethereum Challenges 
+---
 
-### Challenges 
+### Ethereum Challenges 
 
 * Transaction takes couple of minutes to be mined
 * Storage and execution is expensive
 * Ecosystem is young
 +++
 
+### Ethereum Challenges 
 Deal with immutability
 *  Test contracts fully before deployment   
 *  Revert payments you don’t expect
@@ -239,6 +259,7 @@ Deal with immutability
 
 +++
 
+### Ethereum Challenges 
 #### Example of a re-entrancy attack problem
 
 ```
@@ -256,8 +277,11 @@ withdraw again (line 4) while balance is still non zero
 
 ---
 
-### Interesting technology OFF-CHAIN
+## Interesting technology OFF-CHAIN
 
+---
+
+### Interesting technology OFF-CHAIN
 * Oracles (ex: http://www.oraclize.it) 
 
 * Whisper - comunication protocol for DApps
@@ -268,10 +292,10 @@ withdraw again (line 4) while balance is still non zero
       incentives (https://github.com/ethersphere/swarm)
   * IPFS - Interplanetary Filesystem (https://ipfs.io)
 
-
 ---
 ## Some Usefull Links
-+++
+---
+
 ### Some Usefull Links
 * Online compiler https://ethereum.github.io/browser-solidity/
 * Another online compiler https://etherchain.org/solc
@@ -290,15 +314,16 @@ submit)
 
 ---
 
-### Questions 
+### Questions ?
+
+@yarilabs
 
 ---
 
 ### Emanuel Mota 
 
-emanuel@yarilabs.com
-twitter: @emota7
-github: emanuel
+http://yarilabs.com  | @yarilabs
 
-twitter: @yarilabs
-http://yarilabs.com
+* emanuel@yarilabs.com 
+* twitter: @emota7
+* github: emanuel
