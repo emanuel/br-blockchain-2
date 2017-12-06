@@ -320,9 +320,11 @@ submit)
 
 ---
 
-### Emanuel Mota 
+## Emanuel Mota 
 
-http://yarilabs.com  | @yarilabs
+### http://yarilabs.com  
+### @yarilabs
+
 
 * emanuel@yarilabs.com 
 * twitter: @emota7
