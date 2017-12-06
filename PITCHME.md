@@ -246,7 +246,7 @@ contract mortal is owned {
 
 ### Ethereum Challenges 
 
-* Transaction takes couple of minutes to be mined
+* Transaction takes a couple of minutes to be mined
 * Storage and execution is expensive
 * Ecosystem is young
 +++
