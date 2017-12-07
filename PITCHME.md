@@ -41,9 +41,7 @@ Quick questions about the audience
 
 ![Blockchain](assets/blockchain.png)
 
----
-
-## Bitcoin vs. Ethereum
+---?image=assets/wtf.png
 
 ---
 
@@ -81,6 +79,11 @@ Quick questions about the audience
 * Code execution costs GAS 
 * Transaction is a message sent from one account to another and can have a data
   payload
+
+
+---?image=assets/world_computer.jpg
+
+# World Computer ?
 
 ---
 
@@ -256,6 +259,11 @@ Deal with immutability
 *  Test contracts fully before deployment   
 *  Revert payments you don’t expect
 *  Avoid unrecoverable states
+
+---?image=assets/hacker.png
+
+# THE DAO HACK
+
 
 +++
 
