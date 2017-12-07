@@ -99,9 +99,8 @@ Quick questions about the audience
 
 ---?image=assets/sc_application.png
 
-## What are the implications !?
-
 ---
+
 ### Smart Contracts 
 
 Smart contract flow of data 
