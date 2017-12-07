@@ -97,7 +97,7 @@ Quick questions about the audience
 > and which is run in such an environment that it can be trusted to faithfully execute."
 <div style="text-align: right"> (Vitalik Buterin) </div>
 
----
+---?image=assets/sc_application.png
 
 ## What are the implications !?
 
